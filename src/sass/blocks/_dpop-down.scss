@@ -1,0 +1,24 @@
+
+
+.dpop-down {
+    position: relative;
+    cursor: pointer;
+    &_active {
+        display: none;
+        position: absolute;
+        width: 100%;
+        min-width: 200px;
+        padding: 10px;
+        font-size: 16px; 
+        line-height: 130%;
+        color: $black;
+        background-color: #fff;
+        z-index: 40;
+    }
+    &:hover {              //при наведении отображаю скрытый блок с информацией
+        .dpop-down_active {
+            display: block;
+        }
+        
+    }
+}
