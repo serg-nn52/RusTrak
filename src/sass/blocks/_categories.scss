@@ -1,0 +1,64 @@
+.categories {
+    padding: 80px 0 126px 0;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_right {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__btn {
+        width: 39px;
+        height: 39px;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        background-color: #fff;
+        font-size: 18px;
+        margin-left: 10px;
+        transition: all 0.3s;
+        &:hover {
+            background-color: $light-gray;
+        }
+    }
+    &__number {
+        font-size: 20px;
+        color: $light-gray;
+        margin-right: 13px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 42px;    
+    }
+    &__pages {
+        width: 100%;
+    }
+    &__cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .tns-outer {
+        position: relative;
+        .tns-controls {     //стрелки
+            position: absolute;
+            z-index: 30;
+            display: flex;
+            // justify-content: space-between;
+            width: 100%;
+            top: 0%;
+            transform: translateY(-50%);
+            button {
+                display: block;
+                content: '';
+                font-size: 0;
+                width: 32px;
+                height: 32px;
+                border: none;
+            }
+        }
+    }
+}
