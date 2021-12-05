@@ -1,101 +1,100 @@
 .slider {
-    width: 100%;
+  width: 100%;
+  position: relative;
+  &__content {
+    position: absolute;
+    z-index: 20;
+    font-size: 30px;
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__title {
+    margin-top: 140px;
+    width: 452px;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 120%;
+  }
+  &__descr {
+    margin-top: 16px;
+    width: 454.71px;
+    line-height: 150%;
+  }
+  &__buttons {
+    margin-top: 56px;
+    font-size: 16px;
+  }
+  &__button {
+    &_left {
+      margin-right: 16px;
+    }
+    &_right {
+      border: 2px solid #fec80b;
+      background: none;
+      color: white;
+      &:hover {
+        background: none;
+      }
+    }
+  }
+  .tns-outer {
     position: relative;
-    &__content {
-        position: absolute;
-        z-index: 20;
-        font-size: 30px;
-        color: white;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-    &__title {
-        margin-top: 140px;
-        width: 452px;
-        font-weight: 800;
-        font-size: 40px;
-        line-height: 120%;      
-    }
-    &__descr {
-        margin-top: 16px;
-        width: 454.71px;
-        line-height: 150%;
-    }
-    &__buttons {
-        margin-top: 56px;
-        font-size: 16px;
-    }
-    &__button {
-        &_left {
-            margin-right: 16px;
-        }
-        &_right {
-            border: 2px solid #FEC80B;
-            background: none;
-            color: white;
-            &:hover{
-                background: none;
-            }
-        }
-        
-    }
-    .tns-outer {
-        position: relative;
-        .tns-controls {     //стрелки
-            position: absolute;
-            z-index: 30;
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            top: 50%;
-            transform: translateY(-50%);
-            button {
-                display: block;
-                content: '';
-                font-size: 0;
-                width: 32px;
-                height: 32px;
-                border: none;
+    .tns-controls {
+      //стрелки
+      position: absolute;
+      z-index: 30;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      button {
+        display: block;
+        content: "";
+        font-size: 0;
+        width: 32px;
+        height: 32px;
+        border: none;
 
-
-                &:nth-child(1) {
-                    background: url(../../icons/prev.svg) center (center / cover) no-repeat;
-                }
-                &:nth-child(2) {
-                    background: url(../../icons/next.svg) center (center / cover) no-repeat;
-                }
-            }
-            
+        &:nth-child(1) {
+          background: url(../icons/prev.svg) center (center / cover) no-repeat;
         }
-        .tns-nav {    //точки
-            position: absolute;
-            z-index: 30;
-            bottom: 16px;
-            left: 50%;
-            transform: translateX(-50%);
-            button {
-                width: 16px;
-                height: 16px;
-                border-radius: 50%;
-                margin: 0 4px;
-                opacity: 0.8;
-                border: 2px solid #FFFFFF;
-                background: none;
-            }
-            &-active {
-                background-color: #FFFFFF !important;
-            }
+        &:nth-child(2) {
+          background: url(../icons/next.svg) center (center / cover) no-repeat;
         }
+      }
     }
-    &__item {
-        background: url(../../img/bc.jpg) center (center / cover) no-repeat;
-        width: 100%;
-        // height: 566px;
-        min-height: calc(100vh - 68px - 75px);
+    .tns-nav {
+      //точки
+      position: absolute;
+      z-index: 30;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      button {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        margin: 0 4px;
+        opacity: 0.8;
+        border: 2px solid #ffffff;
+        background: none;
+      }
+      &-active {
+        background-color: #ffffff !important;
+      }
     }
+  }
+  &__item {
+    background: url(../img/bc.jpg) center (center / cover) no-repeat;
+    width: 100%;
+    // height: 566px;
+    min-height: calc(100vh - 68px - 75px);
+  }
 }
 .tns-outer [data-action] {
-    display: none;
+  display: none;
 }

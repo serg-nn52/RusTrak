@@ -1,29 +1,41 @@
-@import './libs/bootstrap-reboot.min';
-@import './libs/tiny-slider';
+@import "./libs/bootstrap-reboot.min";
+@import "./libs/tiny-slider";
 
-
-
-@import './base/variables';
-body,
+@import "./base/variables";
+body, p, h1, h2, h3, div
 * {
-    font-family:'Fira Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
 }
-.container {    
-    max-width: 1320px;
-    margin: 0 auto;
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
 }
-@import './blocks/btn';
-@import './blocks/dpop-down';
+input[type='number'] {
+  -moz-appearance:textfield;
+}
 
-@import './blocks/header';
-@import './blocks/slider';
-@import './blocks/categories';
-@import './blocks/card';
+input::-webkit-outer-spin-button,   //убираю стрелочки у input type='number'
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 
+@import "./blocks/btn";
+@import "./blocks/dpop-down";
+@import './blocks/title';
+@import "./blocks/card";
 
-@import './blocks/media';
+@import "./blocks/header";
+@import "./blocks/slider";
+@import "./blocks/categories";
+@import './blocks/about';
+@import './blocks/history';
+@import './blocks/footer';
+@import './blocks/pop-up';
+
+
+@import "./blocks/media";

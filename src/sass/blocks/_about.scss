@@ -1,0 +1,41 @@
+.about {
+    min-height: 585px;
+    padding-bottom: 160px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+        width: 40.6%;
+    }
+    &__title {
+        &_yellow {
+            font-weight: 500;
+            font-size: 42px;
+            color: $main-color;
+        }
+    }
+    &__descr {
+        margin-top: 25px;
+        font-size: 18px;
+        line-height: 150%;
+        color: #000000
+    }
+    &__btn  {
+        width: 175px;
+        height: 44px;
+        margin-top: 64px;
+        font-size: 16px;
+        i {
+            font-size: 14px;
+            vertical-align: middle;
+        }
+    }
+    &__img {
+        width: 69.7%;
+        height: 465px;
+        margin-left: -10.3%;
+        background: url(../img/about_car.jpg) center (center / cover) no-repeat;;
+        z-index: -5;
+    }
+}
