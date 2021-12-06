@@ -1,7 +1,10 @@
 .about {
+    width: 100%;
     min-height: 585px;
     padding-bottom: 160px;
-    .container {
+    position: relative;
+
+    &__wrap {
         display: flex;
         justify-content: space-between;
     }
@@ -32,10 +35,13 @@
         }
     }
     &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
         width: 69.7%;
-        height: 465px;
-        margin-left: -10.3%;
-        background: url(../img/about_car.jpg) center (center / cover) no-repeat;;
+        height: 100%;
+        text-align: right;
+        background: url(../img/about_car_3.jpg) top (right / auto) no-repeat;
         z-index: -5;
     }
 }

@@ -5,17 +5,13 @@ const slider = tns({
   speed: 1000,
   mouseDrag: false,
   swipeToSlide: true,
+  controls: true,
   // responsive: {
-  //   640: {
-  //     edgePadding: 20,
-  //     gutter: 20,
-  //     items: 2
+  //   575: {
+  //     controls: true //убираю стрелки навигации
   //   },
-  //   700: {
-  //     gutter: 30
-  //   },
-  //   900: {
-  //     items: 3
+  //   320: {
+  //     controls: false //убираю стрелки навигации
   //   }
   // }
 });
@@ -26,7 +22,7 @@ const slider1 = tns({
   autoplay: false,
   speed: 1000,
   mouseDrag: false,
-  swipeToSlide: false,
+  swipeToSlide: true,
   nav: false, //убираю точки
   controls: false,
   // responsive: {

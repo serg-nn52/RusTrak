@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -37,7 +37,7 @@
               </div>
             </div>
             <div class="header-top__phone">
-              Для регионов: 8 (800) 77-77-210 Нижний Новгород: 8 (831) 225-00-55
+              Для регионов: 8 (800) 77-77-210 <br> Нижний Новгород: 8 (831) 225-00-55
             </div>
             <button class="btn header-top__btn">
               <i class="fas fa-phone-alt"></i>
@@ -50,7 +50,7 @@
         <div class="header-bottom">
           <nav class="header-bottom__menu">
             <ul class="header-bottom__items">
-              <li class="header-bottom__item"><button class="btn header-bottom__btn"><span><i class="fas fa-bars"></i></span>Каталог</button></li>
+              <li class="header-bottom__item header-bottom__item_active"><button class="btn header-bottom__btn"><span><i class="fas fa-bars"></i></span>Каталог</button></li>
               <li class="header-bottom__item dpop-down"><a href="#">О нас <i class="fas fa-caret-down"></i></a>
                 <div class="dpop-down_active">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -59,7 +59,7 @@
                   fuga fugiat eos!
                 </div>
               </li>
-              <li class="header-bottom__item dpop-down"><a href="#">Медиа <i class="fas fa-caret-down"></i></a></i>
+              <li class="header-bottom__item dpop-down"><a href="#">Медиа <i class="fas fa-caret-down"></i></a>
                 <div class="dpop-down_active">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Perferendis minus, fugiat nihil sapiente soluta assumenda beatae!
@@ -78,6 +78,7 @@
               <!-- <button class="form-search__button"><img src="./icons/search.svg" alt=""></i></button> -->
               <button class="form-search__button"><i class="fas fa-search"></i></button>
             </form>
+            <a href="#" class="header-bottom__link header-bottom__link_mobile"><img src="./icons/header_search.svg" alt="search"></a>
             <a href="#" class="header-bottom__link"><img src="./icons/cart.svg" alt="cart"></a>
             <a href="#" class="header-bottom__link"><img src="./icons/heart.svg" alt="heart"></a>
           </div>
@@ -186,34 +187,39 @@
               </div>
             </div>
           </div>
+        </div>
       </div>
     </section>
     <section class="about">
       <div class="container">
-        <div class="about__content">
-          <h2 class="about__title title">О компании <span class="about__title_yellow">Рустрак</span></h2>
-          <p class="about__descr">Наша компания не случайно занимает лидирующие позиции на рынке спецтехники: каждый день мы вносим свой вклад в развитие отечественного автопрома и укрепление российской экономики.</p>
-          <p class="about__descr">Наша компания снискала признание среди крупнейших отечественных корпораций и государственных структур, став поставщиком спецтехники для таких гигантов, как Газпром, Росатом, Россети, РСК «МИГ» и других.</p>
-          <button class="btn about__btn">Подробнее  <i class="fas fa-long-arrow-alt-right"></i></button>
+        <h2 class="about__title title">О компании <span class="about__title_yellow">Рустрак</span></h2>
+        <div class="about__wrap">
+          <div class="about__content">
+            <p class="about__descr">Наша компания не случайно занимает лидирующие позиции на рынке спецтехники: каждый день мы вносим свой вклад в развитие отечественного автопрома и укрепление российской экономики.</p>
+            <p class="about__descr">Наша компания снискала признание среди крупнейших отечественных корпораций и государственных структур, став поставщиком спецтехники для таких гигантов, как Газпром, Росатом, Россети, РСК «МИГ» и других.</p>
+            <button class="btn about__btn">Подробнее  <i class="fas fa-long-arrow-alt-right"></i></button>
+          </div>
+          <!-- <div class="about__img"></div> -->
         </div>
         <div class="about__img"></div>
-      </div>
+        </div>
+
     </section>
     <section class="history">
       <div class="container">
         <div class="history__item">
           <h3 class="history__number">5</h3>
-            <h3 class="history__title">лет</span></h3>
+            <h3 class="history__title">лет</h3>
           <p class="history__descr">За 5 лет своей деятельности ООО «РусТрак» превратилось в крупное предприятие по производству и продаже специальной техники</p>
         </div>
         <div class="history__item">
           <h3 class="history__number">95</h3>
-            <h3 class="history__title">субъектов</span></h3>
+            <h3 class="history__title">субъектов</h3>
           <p class="history__descr">Мы обеспечили 95 субъектов РФ надежной техникой коммерческого и специализированного предназначения</p>
         </div>
         <div class="history__item">
           <h3 class="history__number">10</h3>
-            <h3 class="history__title">концернов</span></h3>
+            <h3 class="history__title">концернов</h3>
           <p class="history__descr">ООО «РусТрак» дорожит доверием автопрома, которое подтверждено дилерскими полномочиями от 10 лидирующих концернов</p>
         </div>
       </div>
@@ -223,30 +229,30 @@
 
         <div class="footer__bottom">
             <div class="container">
-              <h2 class="title">ОСТАЛИСЬ ВОПРОСЫ?</h2>
-              <p class="footer__subtitle">Оставьте свои контактные данные, и мы презвоним вам в ближайшее время</p>
-            <form class="footer__forms" action="#" method="">
-              <label>Имя<br><input name="userName" type="text" value="" placeholder="Иван Иванов"></label>
-              <label>Телефон<br><input name="phone" type="number" value="" placeholder="+7"></label>
-              <button class="btn footer__btn" type="submit">Открыть каталог</button>
-            </form>
-            <p class="footer__forms_descr">Нажимая на кнопку отправить Вы соглашаетесь на обработку Ваших персональных данных компание ООО «Рустрак»</p>
+                <h2 class="title footer__title">ОСТАЛИСЬ ВОПРОСЫ?</h2>
+                <p class="footer__subtitle">Оставьте свои контактные данные, и мы презвоним вам в ближайшее время</p>
+                <form class="footer__forms" action="#">
+                  <label>Имя<br><input name="userName" type="text" value="" placeholder="Иван Иванов"></label>
+                  <label>Телефон<br><input name="phone" type="number" value="" placeholder="+7"></label>
+                  <button class="btn footer__btn" type="submit">Оставить заявку</button>
+                </form>
+                <p class="footer__forms_descr footer__contract">Нажимая на кнопку отправить Вы соглашаетесь на обработку Ваших персональных данных компание ООО «Рустрак»</p>
             </div>
         </div>
         <div class="footer__right">
-          <img src="./img/footer-car.png" alt="footer-car">
+          <img src="./img/footer-car-2.png" alt="footer-car">
         </div>
-      </div>
+      
     </footer>
 
     <div class="pop-up">
       <div class="pop-up__close"><img src="./icons/close.svg" alt="close"></div>
       <h2 class="title pop-up__title">Заказать звонок</h2>
       <p class="pop-up__descr">Наш менеджер свяжется с вами в ближайшее время</p>
-      <form class="pop-up__forms" action="#" method="">
+      <form class="pop-up__forms" action="#" >
         <label>Имя<br><input name="userName" type="text" value="" placeholder="Иван Иванов"></label>
         <label>Телефон<br><input name="phone" type="number" value="" placeholder="+7"></label>
-        <label><input name="accept" type="checkbox" value=""><p>Я согласен на <span>обработку персональных данных компанией ООО «РусТрак»</span></p></label>
+        <p class="label"><label><input name="accept" type="checkbox" value="">Я согласен на <span>обработку персональных данных компанией ООО «РусТрак»</span></label></p>
         <button class="btn pop-up__btn" type="submit">Оставить заявку</button>
       </form>
     </div>

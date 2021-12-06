@@ -71,14 +71,18 @@
     }
     &-bottom {
         height: 75px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &__menu {
+            width: calc((620 / 1320)*100%);
+        }
         &__items {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 620px;
+            width: 100%;
             margin: 0;
             padding: 0;
 
@@ -101,10 +105,11 @@
         &__orders {
             display: flex;
             align-items: center;
+            justify-content: space-between;
+            width: calc((420 / 1320)*100%);
             height: 100%;
             .form-search {
                 position: relative;
-                margin-right: 21px;
                 input {
                     width: 312px;
                     height: 36px;
@@ -136,22 +141,29 @@
                     }
                 }
             }
-            
-            a {
-                display: block;
-                width: 35px;
-                &:nth-child(2) {
-                    margin-right: 28px;
-                }
+        }
+        &__link {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin-left: 16px;
+            line-height: 40px;
+            text-align: center;
+            &_mobile {
+                display: none;
+            }
+            img {
+                // display: block;
+                // margin: 0 auto;
+                height: 30px;
+                width:  30px;
+                transition: all 0.3s;
+            }
+            &:hover {
                 img {
-                   height: 30px;
-                   transition: all 0.3s;
-                }
-                &:hover {
-                    img {
-                        height: 35px;
-                     }
-                }
+                    width: 35px;
+                    height: 35px;
+                 }
             }
         }
         &__btn {

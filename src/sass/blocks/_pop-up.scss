@@ -2,6 +2,7 @@
     display: none;
     width: 471px;
     height: 567px;
+    max-height: 100vh;
     padding: 31px 39px;
     position: fixed;
     z-index: 50;
@@ -34,22 +35,23 @@
         margin: 0 auto;
         margin-top: 30px;
         width: 312px;
-        
+        .label {
+            width: 297px;
+            font-size: 14px;
+            line-height: 110%;
+            color: #A2A2A2;
+            vertical-align: middle;   
+        }
         label {
             width: 100%;
             font-size: 14px;
             margin-top: 25px;
-            p {
-                width: 297px;
-                font-size: 14px;
-                line-height: 110%;
-                color: #A2A2A2;
-                vertical-align: middle;
-                span {
-                    font-size: inherit;
-                    text-decoration-line: underline;
-                }
+            
+            span {
+                font-size: inherit;
+                text-decoration-line: underline;
             }
+            
             &:nth-child(3) {
                 display: flex;
                 justify-content: space-between;
