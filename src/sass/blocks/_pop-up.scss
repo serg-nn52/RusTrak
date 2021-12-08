@@ -10,7 +10,7 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%) !important;
-  overflow-y:auto;
+  overflow-y: auto;
   &_active {
     display: block;
   }
@@ -86,8 +86,8 @@
     vertical-align: middle;
     text-decoration-line: none !important;
     &_inner {
-        font-size: inherit;
-        text-decoration-line: underline !important;
-      }
+      font-size: inherit;
+      text-decoration-line: underline !important;
+    }
   }
 }

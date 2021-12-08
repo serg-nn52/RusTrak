@@ -1,33 +1,33 @@
 .history {
-    background-color: $main-color;
-    padding: 55px 0 65px 0;
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-basis: 1;
-    }
-    &__item {
-        width: 33.3%;
-    }
-    &__number {
-        margin: 0;
-        font-weight: 500;
-        font-size: 100px;
-        line-height: 100%;
-    }
-    &__title {
-        margin-top: 20px;
-        margin-bottom: 0;
-        font-weight: 500;
-        font-size: 32px;
-        // line-height: 100%;
-    }
-    &__descr {
-        margin-top: 20px;
-        margin-bottom: 0;
-        width: 312px;
-        font-size: 18px;
-        line-height: 150%;
-        color: #000000;
-    }
+  background-color: $main-color;
+  padding: 55px 0 65px 0;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 1;
+  }
+  &__item {
+    width: 33.3%;
+  }
+  &__number {
+    margin: 0;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 100%;
+  }
+  &__title {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 32px;
+    // line-height: 100%;
+  }
+  &__descr {
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 312px;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+  }
 }

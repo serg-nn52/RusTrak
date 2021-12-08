@@ -8,9 +8,10 @@
   border: 1px solid #ebebeb;
   border-radius: 8px;
   // cursor: pointer;
-  &::after {    //немного анимации
+  &::after {
+    //немного анимации
     display: block;
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -18,14 +19,13 @@
     left: 0;
     background-color: #fff;
     opacity: 0;
-    transition: all .3s;
+    transition: all 0.3s;
     border-radius: 8px;
   }
   &:hover {
     &::after {
       background-color: black;
-      opacity: .1;
-      
+      opacity: 0.1;
     }
   }
 
