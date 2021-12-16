@@ -18,26 +18,29 @@ const slider = tns({
 
 const slider1 = tns({
   container: ".categories__slider",
-  items: 1,
-  autoplay: false,
-  speed: 1000,
+  autoplay: true,
+  speed: 3000,
   mouseDrag: false,
   swipeToSlide: true,
   nav: false, //убираю точки
   controls: false,
-  // responsive: {
-  //   640: {
-  //     edgePadding: 20,
-  //     gutter: 20,
-  //     items: 2
-  //   },
-  //   700: {
-  //     gutter: 30
-  //   },
-  //   900: {
-  //     items: 3
-  //   }
-  // }
+  items: 1.2,
+  center: true,
+  loop: true,
+  swipeAngle: false,
+  speed: 400,
+  responsive: {
+    410: {
+      items: 1.6,
+      center: false,
+      autoplay: false,
+    },
+    575: {
+      items: 1,
+      center: false,
+      autoplay: false,
+    },
+  },
 });
 
 let indexCurrent = 1; //начинаю счетчик страниц

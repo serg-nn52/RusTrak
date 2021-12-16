@@ -1,13 +1,12 @@
 .btn {
   width: 185px;
   height: 44px;
-  left: 60px;
-  top: 385px;
   border-radius: 4px;
   background-color: $main-color;
   border: none;
   color: $black;
   transition: all 0.3s;
+  outline: none;
   &:hover {
     background-color: lighten($main-color, 10%);
     box-shadow: 0 0 5px 2px lighten($main-color, 30%);
