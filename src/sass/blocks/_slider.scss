@@ -17,14 +17,14 @@
   }
   &__title {
     margin-top: 140px;
-    width: 452px;
+    max-width: 452px;
     font-weight: 800;
     font-size: 40px;
     line-height: 120%;
   }
   &__descr {
     margin-top: 16px;
-    width: 454.71px;
+    max-width: 454.71px;
     line-height: 150%;
   }
   &__buttons {
