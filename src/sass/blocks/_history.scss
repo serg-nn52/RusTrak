@@ -4,7 +4,6 @@
   .container {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 1;
   }
   &__item {
     width: 33.3%;
@@ -20,7 +19,6 @@
     margin-bottom: 0;
     font-weight: 500;
     font-size: 32px;
-    // line-height: 100%;
   }
   &__descr {
     margin-top: 20px;
