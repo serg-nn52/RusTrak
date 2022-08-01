@@ -1,19 +1,32 @@
-.pop-up {
+.active {
+  overflow-y: hidden;
+  padding-right: 15px;
+}
+.pop-up-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
   display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(#000, 0.8);
+  &_active {
+    display: block;
+  }
+}
+.pop-up {
+  display: block;
   width: 471px;
   height: 567px;
   max-height: 100vh;
   padding: 31px 39px;
   position: fixed;
-  z-index: 50;
   background: #fff;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%) !important;
   overflow-y: auto;
-  &_active {
-    display: block;
-  }
   &__close {
     margin: -23px -31px auto auto;
     width: 32px;

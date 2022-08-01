@@ -1,4 +1,7 @@
 @media (max-width: 1600px) {
+  .slider__title {
+    margin-top: 250px;
+  }
   .about__img {
     background: url(../img/about_car_3.jpg) top right -120px / auto no-repeat;
   }
@@ -7,6 +10,9 @@
 @media (max-width: 1400px) {
   .container {
     width: 90%;
+  }
+  .slider__title {
+    margin-top: 140px;
   }
   .header-bottom {
     &__menu {

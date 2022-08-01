@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/serg-nn52/Pulse.git"
+    "url": "git+https://github.com/serg-nn52/RusTrak.git"
   },
   "author": "Serg",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/serg-nn52/Pulse/issues"
+    "url": "https://github.com/serg-nn52/RusTrak/issues"
   },
-  "homepage": "https://github.com/serg-nn52/Pulse#readme",
+  "homepage": "https://github.com/serg-nn52/RusTrak#readme",
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "gh-pages": "^3.2.3",

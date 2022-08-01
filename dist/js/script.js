@@ -78,17 +78,28 @@ slide.onclick = () => {
 
 let btns = document.querySelectorAll(".btn"),
   pop_up = document.querySelector(".pop-up"),
-  close = document.querySelector(".pop-up__close");
+  pop_up_wrapper = document.querySelector(".pop-up-wrapper"),
+  close = document.querySelector(".pop-up__close"),
+  body = document.querySelector("body");
 
 btns.forEach((btn) => {
   btn.addEventListener("click", () => {
     console.log(btn.className);
     if (btn.className !== "btn footer__btn") {
-      pop_up.classList.add("pop-up_active");
+      pop_up_wrapper.classList.add("pop-up-wrapper_active");
+      body.classList.add("active");
     }
   });
 });
 
+pop_up_wrapper.addEventListener("click", (e) => {
+  if (e.target === e.currentTarget) {
+    pop_up_wrapper.classList.remove("pop-up-wrapper_active");
+    body.classList.remove("active");
+  }
+});
+
 close.addEventListener("click", () => {
-  pop_up.classList.remove("pop-up_active");
+  pop_up_wrapper.classList.remove("pop-up-wrapper_active");
+  body.classList.remove("active");
 });
